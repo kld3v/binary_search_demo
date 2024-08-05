@@ -119,8 +119,10 @@ function binarySearchStep() {
 	updateStepsTaken()
 
 	if (midValue === target) {
-		alert(`Found ${target} at index ${mid}`)
+		alert(`Found ${target} at index ${mid} after ${steps} steps`)
 		resetTargetInput()
+		steps = 0
+		updateStepsTaken()
 		return
 	}
 

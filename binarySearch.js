@@ -15,3 +15,5 @@ export function binarySearch(array, target) {
 	alert("Target doesn't exist in the array")
 	return -1
 }
+
+export function binarySearchMyOwn(array, target) {}
