@@ -1,6 +1,6 @@
 import './style.css'
 
-import { binarySearch } from './binarySearch.js'
+import { binarySearch, binarySearchFunctional } from './binarySearch.js'
 
 document.querySelector('#app').innerHTML = `
   <div style="display: flex; flex-direction: column; justify-content: center; align-items: center" >
@@ -152,6 +152,6 @@ function binarySearchStep() {
 	})
 }
 
-document.querySelector('#search').addEventListener('click', () => binarySearch(array, parseInt(document.querySelector('#searchInput').value)))
+document.querySelector('#search').addEventListener('click', () => binarySearchFunctional(array, parseInt(document.querySelector('#searchInput').value)))
 
 document.querySelector('#searchStep').addEventListener('click', binarySearchStep)
